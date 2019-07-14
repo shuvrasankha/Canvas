@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Canvas</title>
+        <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body><div id="toolbar" >
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#" id="nav">Drawing</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item active">
+                          <div style="padding: 30px" id="colors">Color: <input type="color" value="#ffff00" name="myColor" id="myColor"></div>
+                        </li>
+                        <li class="nav-item">
+                              <div style="padding: 30px" id="range">Size: 1<input type="range" class="slider" id="myRange" value="5" min="1" max="100">100</div>
+                        </li>
+                        <li class="nav-item">
+                          <div style="padding: 20px"><button  class="btn btn-light" id="brush"><img src="img/p.png"></button></div>
+                        </li>
+                        <li class="nav-item">
+                           <div style="padding: 20px"><button class="btn btn-light" id="erase"><img  src="img/er.png"></button></div>
+                        </li>
+                        <li class="nav-item">
+                          <div style="padding: 20px"><button class="btn btn-light" id="reset"><img  src="img/r.png"></button></div>
+                        </li>
+                        <li class="nav-item">
+                          <div  style="padding: 20px ;  "> <a href="" id="saveLink"><button  class="btn btn-light" id="save"><img  src="img/s.png"></button></a></div>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+			
+			<br>
+		</div>
+        <canvas id="canvas">Your browser does not support canvas. Please upgrade it!</canvas>
+
+
+
+<div style="align-items: center">
+    <center><p >made by - Shuvrasankha Paul</p></center>
+</div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+        <script src="paint.js"></script>
+    </body>
+
+
+</html>
